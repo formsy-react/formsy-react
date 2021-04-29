@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  target-branch: frontend-bumps
+  ignore:
+  - dependency-name: np
+    versions:
+    - ">= 6.a, < 7"
+  - dependency-name: np
+    versions:
+    - "> 7.2.0"
